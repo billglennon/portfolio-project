@@ -39,7 +39,7 @@ CREATE TABLE team (
     FOREIGN KEY (league_id) REFERENCES league (league_id)
 );
 
--- Team_Player (junction table)
+-- Team_Player (association table)
 CREATE TABLE team_player (
     team_id INTEGER NOT NULL,
     player_id INTEGER NOT NULL,
